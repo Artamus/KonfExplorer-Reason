@@ -1,5 +1,7 @@
 # Reason KotlinConf Explorer
-ReasonML implementation of https://kotlinlang.org/docs/tutorials/javascript/react-and-kotlin-js.html 
+ReasonML implementation of the 
+[Kotlin/JS react hands-on](https://kotlinlang.org/docs/tutorials/javascript/react-and-kotlin-js.html).
+Like my [Kotlin/JS version](https://github.com/Artamus/KonfExplorer), uses functional components. 
 
 Starter theme used: `bsb -init app-name -theme react-starter`
  
@@ -27,3 +29,10 @@ npm run webpack:production
 This will replace the development artifact `build/Index.js` for an optimized version as well as copy `src/index.html` into `build/`. You can then deploy the contents of the `build` directory (`index.html` and `Index.js`).
 
 **To enable dead code elimination**, change `bsconfig.json`'s `package-specs` `module` from `"commonjs"` to `"es6"`. Then re-run the above 2 commands. This will allow Webpack to remove unused code.
+
+## Filesizes
+```
+211B May 17 23:29 index.html
+315K May 17 23:29 Index.js
+939K May 17 23:29 Index.js.map
+```
